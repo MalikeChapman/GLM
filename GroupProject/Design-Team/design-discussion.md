@@ -3,7 +3,14 @@
 #### Design 1 (malikechapman):
 ---
 
+![](C:\Users\ashch\Pictures\asherDesign.jpg)
+
+
+
+
+
 #### Pros:
+
 - The UML diagrams is clearly split into two sides. One side supports the lists, while the other sides supports the items. 
 We can clearly see the items come from a database and from that, the item is separated into two distinct categories. 
 The two categories foodItem and nonfooditem tells us that items won't be bunched together and that we will know where 
@@ -22,7 +29,10 @@ the user has should be in the search class. He also failed to add the multiplici
 #### Design 2 (neloyislam245):
 
 ---
+![](C:\Users\ashch\Pictures\neloyislam245Design.jpg)
+
 ##### - Pros: 
+
 - Good thing about this diagram is it has a clear vision on it. If you look into it, its very easy to read and get 
 the picture without even giving an explanation. It maintains a correct flow as it is supposed to be, User asks for an 
 item, item is looked based on ItemType and Item, once the item is found, send it to the list class and finish the 
@@ -35,7 +45,10 @@ attributes are missing as well.This diagram has only few options where the whole
 
 #### Design 3 (ych529):
 ---
+![](C:\Users\ashch\Pictures\ych529Design.jpg)
+
 ##### Pros:
+
 - The UML diagram is clear and simple. We can clearly see the items created by type with the boolean isCheckedOff which is 
 very convenient for clearing the Check-Off Mark. We can also create, read, update and delete items from the database of 
 items. In the List, we are able to search for an item in the database.
@@ -49,7 +62,10 @@ can do in the system.
 #### Design 4 (zxy9889):
 ---
 
+![](C:\Users\ashch\Pictures\zxy9889Design.jpg)
+
 #### Pros:
+
 The UML design can clearly see that how many classes we need to use, and for each class, what operations and 
 function can be used to help implement our final goal.
 
@@ -59,7 +75,10 @@ also miss the Search class to help custom find the item.
 
 #### Design 5 (noureensandresy): 
 ---
+![](C:\Users\ashch\Pictures\noureensandresyDesign.jpg)
+
  #####  Pros: 
+
 - The design is simple. We can see that the user has access to the grocery list. They can add, delete, and  change the quantity of whatever product they want. The system can also add the new product they searched for after specifying its type.
 
 ##### Cons:
@@ -67,6 +86,10 @@ also miss the Search class to help custom find the item.
 
 ### Section B: Team Design
 ---
+![](C:\Users\ashch\Pictures\teamDesign.jpg)
+
+
+
 For the team design, we liked Asher's UML a lot. The way he separated UML into two sections made it easy to follow.  
 We also liked Md and Noureen's designs.  We essentially combined decided to combine Asher's and Md's designs. With both 
 of there designs combined, the cons that Asher had, Md's design made up for it. We added the itemSearch class from Md's 
