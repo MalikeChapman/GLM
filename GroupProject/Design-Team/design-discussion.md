@@ -3,13 +3,9 @@
 #### Design 1 (malikechapman):
 ---
 
-![](C:\Users\ashch\Pictures\asherDesign.jpg)
+![](https://github.com/qc-se-spring2021/370Spring21Sec55Team6/blob/main/GroupProject/Design-Individual/malikechapman/design.pdf)
 
-
-
-
-
-#### Pros:
+Pros:
 
 - The UML diagrams is clearly split into two sides. One side supports the lists, while the other sides supports the items. 
 We can clearly see the items come from a database and from that, the item is separated into two distinct categories. 
