@@ -3,7 +3,7 @@
 #### Design 1 (malikechapman):
 ---
 
-![](https://github.com/qc-se-spring2021/370Spring21Sec55Team6/blob/main/GroupProject/Design-Individual/malikechapman/design.pdf)
+![](https://github.com/qc-se-spring2021/370Spring21Sec55Team6/blob/main/GroupProject/Images/asherDesign.jpg)
 
 Pros:
 
