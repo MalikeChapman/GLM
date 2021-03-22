@@ -25,7 +25,7 @@ the user has should be in the search class. He also failed to add the multiplici
 #### Design 2 (neloyislam245):
 
 ---
-![](C:\Users\ashch\Pictures\neloyislam245Design.jpg)
+![](https://github.com/qc-se-spring2021/370Spring21Sec55Team6/blob/main/GroupProject/Images/neloyislam245Design.jpg)
 
 ##### - Pros: 
 
@@ -41,7 +41,7 @@ attributes are missing as well.This diagram has only few options where the whole
 
 #### Design 3 (ych529):
 ---
-![](C:\Users\ashch\Pictures\ych529Design.jpg)
+![](https://github.com/qc-se-spring2021/370Spring21Sec55Team6/blob/main/GroupProject/Images/ych529Design.jpg)
 
 ##### Pros:
 
@@ -58,7 +58,7 @@ can do in the system.
 #### Design 4 (zxy9889):
 ---
 
-![](C:\Users\ashch\Pictures\zxy9889Design.jpg)
+![](https://github.com/qc-se-spring2021/370Spring21Sec55Team6/blob/main/GroupProject/Images/zxy9889Design.jpg)
 
 #### Pros:
 
@@ -71,7 +71,7 @@ also miss the Search class to help custom find the item.
 
 #### Design 5 (noureensandresy): 
 ---
-![](C:\Users\ashch\Pictures\noureensandresyDesign.jpg)
+![](https://github.com/qc-se-spring2021/370Spring21Sec55Team6/blob/main/GroupProject/Images/noureensandresyDesign.jpg)
 
  #####  Pros: 
 
@@ -82,7 +82,7 @@ also miss the Search class to help custom find the item.
 
 ### Section B: Team Design
 ---
-![](C:\Users\ashch\Pictures\teamDesign.jpg)
+![](https://github.com/qc-se-spring2021/370Spring21Sec55Team6/blob/main/GroupProject/Images/teamDesign.jpg)
 
 
 
