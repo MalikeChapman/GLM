@@ -4,7 +4,7 @@
 
 ## 1 Use Case Diagram
 
-*This section should contain a use case diagram with all the actors and use cases for the system, suitably connected.*
+
 ![](https://i.imgur.com/1G0yEJt.jpg)
 
 
