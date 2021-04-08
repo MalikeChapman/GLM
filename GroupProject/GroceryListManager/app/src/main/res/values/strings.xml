@@ -12,4 +12,6 @@
     <string name="signinTitle">Grocery List Manager</string>
     <string name="signInButton">Sign in</string>
     <string name="signUpButton"> Sign Up</string>
+    <string name="create_a_new_list">Create a new list</string>
+    <string name="lists">Lists</string>
 </resources>
