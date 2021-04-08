@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="top_Margin">24dp</dimen>
+    <dimen name="fill_space">622dp</dimen>
+</resources>

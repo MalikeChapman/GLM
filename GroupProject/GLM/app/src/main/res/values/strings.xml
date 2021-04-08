@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">GroceryListManager</string>
+    <string name="submit">Submit</string>
+    <string name="back">Back</string>
+    <string name="first_name"> First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="reenter_PW">Reenter Password</string>
+    <string name="signupTitle">Welcome to Grocery List Manager!</string>
+    <string name="signinTitle">Grocery List Manager</string>
+    <string name="signInButton">Sign in</string>
+    <string name="signUpButton"> Sign Up</string>
+    <string name="profile_Title">Profile</string>
+    <string name="search_category">Search Item</string>
+    <string name="home">Home</string>
+    <string name="menu_logout">Logout</string>
+</resources>
