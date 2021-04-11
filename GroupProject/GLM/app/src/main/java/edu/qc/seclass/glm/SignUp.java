@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.grocerylistmanager.R;
 
@@ -36,6 +37,12 @@ public class SignUp extends AppCompatActivity {
 
     public void backToLogin(View view) {
         Intent i = new Intent(mContext, LoginActivity.class);
+        startActivity(i);
+    }
+
+    public void toMainActivity(View view) {
+        Intent i = new Intent(mContext, MainActivity.class);
+        Toast.makeText(mContext, "Sign Up Successful! Welcome", Toast.LENGTH_SHORT).show();
         startActivity(i);
     }
 }

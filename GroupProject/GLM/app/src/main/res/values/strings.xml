@@ -16,4 +16,6 @@
     <string name="search_category">Search Item</string>
     <string name="home">Home</string>
     <string name="menu_logout">Logout</string>
+    <string name="tvTotalValueTitle">Total value of items in list</string>
+    <string name="tvNumberofItems">Number of items in the list</string>
 </resources>
