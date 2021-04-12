@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.qc.seclass.glm.ItemDescription">
+
+    <ImageButton
+        android:id="@+id/btnNegative"
+        android:layout_width="54dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_iconfinder_substract_2677681" />
+
+    <ImageButton
+        android:id="@+id/btnPositive"
+        android:layout_width="50dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textQuantity"
+        app:srcCompat="@drawable/ic_iconfinder_add_70px_510874" />
+
+    <ImageView
+        android:id="@+id/itemPhoto"
+        android:layout_width="143dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="34dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/aisle" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="184dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="27dp"
+        android:text="Item"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="356dp"
+        android:layout_height="384dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="27dp"
+        android:text="Good Product"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemPhoto" />
+
+    <TextView
+        android:id="@+id/textPrice"
+        android:layout_width="147dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="50dp"
+        android:text="Price: $###"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintStart_toEndOf="@+id/itemPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/textName" />
+
+    <ImageButton
+        android:id="@+id/btnCart"
+        android:layout_width="81dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_iconfinder_iconoteka_shopping_cart_add_b_s_3507741" />
+
+    <TextView
+        android:id="@+id/textQuantity"
+        android:layout_width="57dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="44dp"
+        android:text="Quantity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnNegative" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
