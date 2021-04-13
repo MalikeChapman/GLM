@@ -47,12 +47,11 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder{
         ConstraintLayout container;
         EditText etQuantityNumber;
-        ImageView ivItemPicture;
         ImageView ivPlusQuantity;
         ImageView ivMinusQuantity;
         ImageView ivAddItemToList;
         TextView tvItemName;
-        TextView tvItemPrice;
+
 
 
 
@@ -61,19 +60,22 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
             super(itemView);
             container = itemView.findViewById(R.id.container);
             etQuantityNumber = itemView.findViewById(R.id.etQuantityNumber);
-            ivItemPicture = itemView.findViewById(R.id.ivItemPicture);
             ivPlusQuantity = itemView.findViewById(R.id.ivPlusQuantity);
             ivMinusQuantity = itemView.findViewById(R.id.ivMinusQuantity);
             ivAddItemToList = itemView.findViewById(R.id.ivAddItemToList);
             tvItemName = itemView.findViewById(R.id.tvItemName);
-            tvItemPrice = itemView.findViewById(R.id.tvItemPrice);
+
         }
 
         public void bind(final Item item){
-            tvItemName.setText(item.getItemName());
-            tvItemPrice.setText(Double.toString(item.getItemValue()));
-
+            tvItemName.setText(item.getKeyItemName());
 
         }
+
+
+    }
+    public void addAll(List<Item> list){
+        items.addAll(list);
+        notifyDataSetChanged();
     }
 }

@@ -18,4 +18,6 @@
     <string name="menu_logout">Logout</string>
     <string name="tvTotalValueTitle">Total value of items in list</string>
     <string name="tvNumberofItems">Number of items in the list</string>
+    <string name="search_item">Add</string>
+    <string name="add_item">Add new item</string>
 </resources>

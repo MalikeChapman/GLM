@@ -6,16 +6,31 @@
     android:layout_height="match_parent"
     tools:context="edu.qc.seclass.glm.ItemSearchActivity">
 
-    <SearchView
-        android:id="@+id/svItemSearch"
-        android:layout_width="match_parent"
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/bnvToolbarItemSearch"
+        android:onClick="searchItems"
+        android:text="@string/search_item"
+        app:layout_constraintBottom_toTopOf="@+id/rvItemView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/etAddItem"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etAddItem"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="@string/add_item"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/rvItemView"
+        app:layout_constraintEnd_toStartOf="@+id/btnAdd"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.004" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvItemView"
@@ -26,7 +41,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/svItemSearch" />
+        app:layout_constraintTop_toBottomOf="@id/etAddItem" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bnvToolbarItemSearch"
