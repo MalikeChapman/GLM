@@ -9,10 +9,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.grocerylistmanager.R;
@@ -20,9 +22,11 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseQuery;
+import com.parse.SaveCallback;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.zip.Inflater;
 
 public class ItemSearchActivity extends AppCompatActivity {
     BottomNavigationView bnvToolBarItemSearch;
@@ -32,6 +36,8 @@ public class ItemSearchActivity extends AppCompatActivity {
     List<Item> mItems;
     Button btnAdd;
     EditText etAddItem;
+    EditText etQuantityNumber;
+    ImageView ivMinusQuantity;
 
 
     @Override
@@ -45,11 +51,14 @@ public class ItemSearchActivity extends AppCompatActivity {
         btnAdd = findViewById(R.id.btnAdd);
         etAddItem = findViewById(R.id.etAddItem);
 
+
+
         mItems = new ArrayList<>();
         mItemAdapter = new ItemAdapter(mContext, mItems);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         rvItemView.setLayoutManager(linearLayoutManager);
         rvItemView.setAdapter(mItemAdapter);
+
         queryItems();
 
 
@@ -107,12 +116,32 @@ public class ItemSearchActivity extends AppCompatActivity {
                     Log.e("ItemSearchActivity", "Issue with getting items", e);
                     return;
                 }
+                mItemAdapter.clear();
                 mItemAdapter.addAll(objects);
             }
         });
     }
 
-    public void searchItems(View view) {
+
+
+    public void addItemsToDatabase(View view) {
+        String itemText = etAddItem.getText().toString();
+       Item itemToAdd = new Item();
+       itemToAdd.setKeyItemName(itemText);
+       itemToAdd.saveInBackground(new SaveCallback() {
+           @Override
+           public void done(ParseException e) {
+               if (e != null){
+                   Log.e("ItemSearchActivity", "Issue with save", e);
+                   Toast.makeText(mContext, "Error while saving new item", Toast.LENGTH_SHORT).show();
+               }
+               Log.i("ItemSearchActivity", "New item saved successfully");
+               queryItems();
+               etAddItem.setText("");
+           }
+       });
 
     }
+
+
 }

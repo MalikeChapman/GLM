@@ -69,6 +69,21 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
 
         public void bind(final Item item){
             tvItemName.setText(item.getKeyItemName());
+            ivMinusQuantity.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int quantity = Integer.parseInt(etQuantityNumber.getText().toString()) - 1;
+                    etQuantityNumber.setText(Integer.toString(quantity));
+                }
+            });
+
+            ivPlusQuantity.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int quantity = Integer.parseInt(etQuantityNumber.getText().toString()) + 1;
+                    etQuantityNumber.setText(Integer.toString(quantity));
+                }
+            });
 
         }
 
@@ -76,6 +91,10 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
     }
     public void addAll(List<Item> list){
         items.addAll(list);
+        notifyDataSetChanged();
+    }
+    public void clear(){
+        items.clear();
         notifyDataSetChanged();
     }
 }

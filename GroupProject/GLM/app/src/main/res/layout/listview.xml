@@ -16,17 +16,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvListTotalValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:text="$45.59"
-        android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/tvTotalValueTitle"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <TextView
         android:id="@+id/tvListName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,7 +26,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvListSize"
+        android:id="@+id/tvListSizeTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -46,21 +35,12 @@
         app:layout_constraintTop_toBottomOf="@+id/tvListName" />
 
     <TextView
-        android:id="@+id/tvTotalValueTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="@string/tvTotalValueTitle"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvListSize" />
-
-    <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tvListSize"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:text="10"
         android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/tvListSize"
+        app:layout_constraintStart_toEndOf="@+id/tvListSizeTitle"
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 </androidx.constraintlayout.widget.ConstraintLayout>
